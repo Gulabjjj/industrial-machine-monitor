@@ -2,7 +2,7 @@ services:
   - type: web
     name: industrial-machine-monitor
     runtime: docker
-    plan: starter        # use "free" if you only want a demo (it sleeps when idle)
+    plan: free        # use "free" if you only want a demo (it sleeps when idle)
     dockerfilePath: ./Dockerfile
     healthCheckPath: /vnc.html
     envVars:
